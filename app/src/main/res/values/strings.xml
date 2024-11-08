@@ -2,4 +2,15 @@
     <string name="app_name">ProyectoFinal</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="volver_al_men">Volver al Menú</string>
+    <string name="en_mantenimiento">Disponible pronto</string>
+    <string name="salir">Salir</string>
+    <string name="snake">Snake</string>
+    <string name="_4_en_linea">4 en Linea</string>
+    <string name="tic_tac_toe">Tic Tac Toe</string>
+    <string name="bienvenido_a_tortura_2">¡Bienvenido a Tortura 2!</string>
+    <string name="sala_de_minijuegos">Sala de Minijuegos</string>
+    <string name="ingresa_tu_nombre_de_jugador">Ingresa tu nombre de jugador</string>
+    <string name="nombre_del_jugador">Nombre del jugador</string>
+    <string name="comenzar">Comenzar</string>
 </resources>
