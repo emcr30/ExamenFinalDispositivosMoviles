@@ -1,14 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MenuFragment">
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#03d8fa">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <Button
+        android:id="@+id/btnGame1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:text="Tic Tac Toe"
+        android:backgroundTint="#030b70"/>
 
-</FrameLayout>
+    <Button
+        android:id="@+id/btnGame2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4 en Linea"
+        android:backgroundTint="#030b70"/>
+
+    <Button
+        android:id="@+id/btnGame3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Snake"
+        android:backgroundTint="#030b70"/>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salir"
+        android:backgroundTint="#030b70"/>
+
+</LinearLayout>
