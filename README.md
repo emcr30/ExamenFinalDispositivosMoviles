@@ -30,7 +30,7 @@ Bienvenido a **Tortura2** — ¡Una aplicación de minijuegos clásica para desa
   - Detección automática de ganador o empate.
   - Indicador de turno y botón de reinicio de partida.
 
-### 🟡 4 In A Row
+### 🟡 4 en Línea
 - **Objetivo:** Conecta cuatro fichas en línea, columna o diagonal para ganar.
 - **Características:**
   - Soporte para multijugador local.
@@ -55,6 +55,6 @@ Bienvenido a **Tortura2** — ¡Una aplicación de minijuegos clásica para desa
 
 ## 🚧 **Instalación y Uso**
 
-1. **Clona este repositorio:**
+1. **Clona este repositorio** desde la rama `master`:
    ```bash
-   git clone https://github.com/emcr30/ExamenFinalDispositivosMoviles.git
+   git clone -b master https://github.com/emcr30/ExamenFinalDispositivosMoviles.git
