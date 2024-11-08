@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="#07b6f2">
+
+    <!-- Texto de bienvenida -->
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡Bienvenido a Tortura 2!"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Descripción del juego -->
+    <TextView
+        android:id="@+id/game_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sala de Minijuegos"
+        android:textSize="30sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Ingreso de nombre -->
+    <TextView
+        android:id="@+id/game_ingreso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresa tu nombre de jugador"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Campo para ingresar el nombre del jugador -->
+    <EditText
+        android:id="@+id/player_name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del jugador"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/darker_gray"
+        android:backgroundTint="@android:color/white" />
+
+    <!-- Texto de error -->
+    <TextView
+        android:id="@+id/error_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:text=""
+        android:visibility="gone"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Botón para comenzar el juego -->
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comenzar"
+        android:textSize="30dp"
+        android:backgroundTint="#030b70"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="25dp"/>
+</LinearLayout>
