@@ -4,22 +4,164 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
     android:padding="16dp"
+    android:gravity="center"
     android:background="#07b6f2">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <!-- Contadores de victorias -->
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/en_mantenimiento"
-        android:textSize="24sp"
-        android:textColor="#FF0000"
-        android:padding="16dp"/>
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
 
-    <Button
-        android:id="@+id/btnBackToMenu"
+        <TextView
+            android:id="@+id/tvPlayerScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jugador 1: 0"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/tvPCScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PC: 0"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:padding="8dp"
+            />
+    </LinearLayout>
+
+    <!-- Tablero 3x3 -->
+    <GridLayout
+        android:id="@+id/board"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/volver_al_men"/>
+        android:rowCount="3"
+        android:columnCount="3"
+        android:layout_marginTop="16dp">
+
+        <!-- Cada celda del tablero será un botón -->
+        <Button
+            android:id="@+id/btnCell0"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:textSize="24sp"
+            android:backgroundTint="#030b70"
+            android:textColor="@android:color/white"
+            />
+
+        <Button
+            android:id="@+id/btnCell1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:textSize="24sp"
+            android:backgroundTint="#030b70"
+            android:textColor="@android:color/white"
+            />
+
+        <Button
+            android:id="@+id/btnCell2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:textSize="24sp"
+            android:backgroundTint="#030b70"
+            android:textColor="@android:color/white"
+            />
+
+        <Button
+            android:id="@+id/btnCell3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:textSize="24sp"
+            android:backgroundTint="#030b70"
+            android:textColor="@android:color/white"
+            />
+
+        <Button
+            android:id="@+id/btnCell4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:textSize="24sp"
+            android:backgroundTint="#030b70"
+            android:textColor="@android:color/white"
+            />
+
+        <Button
+            android:id="@+id/btnCell5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:textSize="24sp"
+            android:backgroundTint="#030b70"
+            android:textColor="@android:color/white"
+            />
+
+        <Button
+            android:id="@+id/btnCell6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:textSize="24sp"
+            android:backgroundTint="#030b70"
+            android:textColor="@android:color/white"
+            />
+
+        <Button
+            android:id="@+id/btnCell7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:textSize="24sp"
+            android:backgroundTint="#030b70"
+            android:textColor="@android:color/white"
+            />
+
+        <Button
+            android:id="@+id/btnCell8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:textSize="24sp"
+            android:backgroundTint="#030b70"
+            android:textColor="@android:color/white"
+            />
+    </GridLayout>
+
+    <!-- Mensaje final -->
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:visibility="gone"
+        android:textColor="@android:color/white"/>
+
+    <!-- Botones de acciones finales -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/finalActions">
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nueva Partida"
+            android:backgroundTint="#030b70"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnBackToMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Volver al Menu"
+            android:backgroundTint="#030b70"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
 
 </LinearLayout>
