@@ -58,3 +58,6 @@ Bienvenido a **Tortura2** — ¡Una aplicación de minijuegos clásica para desa
 1. **Clona este repositorio** desde la rama `master`:
    ```bash
    git clone -b master https://github.com/emcr30/ExamenFinalDispositivosMoviles.git
+2. **Abre el proyecto en Android Studio.
+3. Conecta un dispositivo o utiliza el emulador de Android.
+4. Ejecuta el proyecto para comenzar a jugar.
