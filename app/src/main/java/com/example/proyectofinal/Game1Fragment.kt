@@ -1,6 +1,7 @@
 package com.example.proyectofinal
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,6 +9,7 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
+import com.google.firebase.firestore.FirebaseFirestore
 
 class Game1Fragment : Fragment() {
 
@@ -114,6 +116,7 @@ class Game1Fragment : Fragment() {
     }
 
     private fun endGame(winner: String) {
+        // Determinar el ganador y actualizar los puntajes
         when (winner) {
             "Player" -> {
                 playerScore++
@@ -131,6 +134,29 @@ class Game1Fragment : Fragment() {
         tvPCScore.text = "PC: $pcScore"
         tvResult.visibility = View.VISIBLE
         finalActions.visibility = View.VISIBLE
+
+        // Guardar el resultado de la partida en Firestore
+        saveGameHistory(playerScore, pcScore, winner)
+    }
+
+    private fun saveGameHistory(playerScore: Int, pcScore: Int, winner: String) {
+        val db = FirebaseFirestore.getInstance()
+
+        val gameData = hashMapOf(
+            "playerScore" to playerScore,
+            "pcScore" to pcScore,
+            "winner" to winner,
+            "timestamp" to System.currentTimeMillis()  // Timestamp de la partida
+        )
+
+        db.collection("gameHistory")
+            .add(gameData)
+            .addOnSuccessListener {
+                Log.d("Firebase", "Historial de juego guardado exitosamente")
+            }
+            .addOnFailureListener { e ->
+                Log.e("Firebase", "Error al guardar el historial de juego", e)
+            }
     }
 
     private fun resetBoard() {
