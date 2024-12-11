@@ -1,3 +1,5 @@
+// Aportacion de Evelyn Chipana
+
 package com.example.proyectofinal
 
 import android.graphics.Color

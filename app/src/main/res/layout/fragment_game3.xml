@@ -1,3 +1,5 @@
+<!-- Aportacion de Evelyn Chipana -->
+
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -31,6 +33,16 @@
             android:text="Puntos: 0"
             android:textColor="@android:color/white"
             android:textSize="18sp" />
+
+        <!-- Botón para volver al menú -->
+        <Button
+            android:id="@+id/btnBackToMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:text="Volver al Menú" />
 
         <!-- Controles de movimiento -->
         <GridLayout
