@@ -141,4 +141,6 @@ class Game3Fragment : Fragment() {
         handler.removeCallbacksAndMessages(null)
         tvScore.text = message
     }
+
+
 }
