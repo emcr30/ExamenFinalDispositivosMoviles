@@ -1,25 +1,88 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
-    android:padding="16dp"
-    android:background="#07b6f2">
+    android:padding="16dp">
 
+    <!-- Contadores de victorias -->
     <TextView
+        android:id="@+id/tvScore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/en_mantenimiento"
-        android:textSize="24sp"
-        android:textColor="#FF0000"
-        android:padding="16dp"/>
+        android:text="Jugador: 0 | PC: 0"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"/>
 
+    <!-- Fila de botones para las columnas -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Botones de columnas -->
+        <Button
+            android:id="@+id/btnCol0"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="8dp"
+            android:text="↓"/>
+        <Button
+            android:id="@+id/btnCol1"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="8dp"
+            android:text="↓"/>
+        <Button
+            android:id="@+id/btnCol2"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="8dp"
+            android:text="↓"/>
+        <Button
+            android:id="@+id/btnCol3"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="8dp"
+            android:text="↓"/>
+        <Button
+            android:id="@+id/btnCol4"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="8dp"
+            android:text="↓"/>
+        <Button
+            android:id="@+id/btnCol5"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="8dp"
+            android:text="↓"/>
+        <Button
+            android:id="@+id/btnCol6"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="8dp"
+            android:text="↓"/>
+    </LinearLayout>
+
+    <!-- Tablero de juego -->
+    <GridLayout
+        android:id="@+id/gridBoard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnCount="7"
+        android:rowCount="6"
+        android:background="#ADD8E6"
+        android:padding="4dp"/>
+
+    <!-- Botón de volver -->
     <Button
         android:id="@+id/btnBackToMenu"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/volver_al_men"/>
-
+        android:text="Volver al Menú"
+        android:layout_marginTop="16dp"/>
 </LinearLayout>
