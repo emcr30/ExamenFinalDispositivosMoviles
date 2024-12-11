@@ -3,7 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="#07b6f2"
+    >
 
     <!-- Contadores de victorias -->
     <TextView
@@ -13,7 +15,9 @@
         android:text="Jugador: 0 | PC: 0"
         android:textSize="18sp"
         android:layout_gravity="center"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="16dp"
+        android:textColor="@android:color/white"
+        />
 
     <!-- Fila de botones para las columnas -->
     <LinearLayout
@@ -28,43 +32,57 @@
             android:layout_width="50dp"
             android:layout_height="60dp"
             android:layout_marginBottom="8dp"
-            android:text="↓"/>
+            android:text="↓"
+            android:backgroundTint="#030b70"
+            />
         <Button
             android:id="@+id/btnCol1"
             android:layout_width="50dp"
             android:layout_height="60dp"
             android:layout_marginBottom="8dp"
-            android:text="↓"/>
+            android:text="↓"
+            android:backgroundTint="#030b70"
+            />
         <Button
             android:id="@+id/btnCol2"
             android:layout_width="50dp"
             android:layout_height="60dp"
             android:layout_marginBottom="8dp"
-            android:text="↓"/>
+            android:text="↓"
+            android:backgroundTint="#030b70"
+            />
         <Button
             android:id="@+id/btnCol3"
             android:layout_width="50dp"
             android:layout_height="60dp"
             android:layout_marginBottom="8dp"
-            android:text="↓"/>
+            android:text="↓"
+            android:backgroundTint="#030b70"
+            />
         <Button
             android:id="@+id/btnCol4"
             android:layout_width="50dp"
             android:layout_height="60dp"
             android:layout_marginBottom="8dp"
-            android:text="↓"/>
+            android:text="↓"
+            android:backgroundTint="#030b70"
+            />
         <Button
             android:id="@+id/btnCol5"
             android:layout_width="50dp"
             android:layout_height="60dp"
             android:layout_marginBottom="8dp"
-            android:text="↓"/>
+            android:text="↓"
+            android:backgroundTint="#030b70"
+            />
         <Button
             android:id="@+id/btnCol6"
             android:layout_width="50dp"
             android:layout_height="60dp"
             android:layout_marginBottom="8dp"
-            android:text="↓"/>
+            android:text="↓"
+            android:backgroundTint="#030b70"
+            />
     </LinearLayout>
 
     <!-- Tablero de juego -->
@@ -84,5 +102,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Volver al Menú"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#030b70"
+        />
 </LinearLayout>

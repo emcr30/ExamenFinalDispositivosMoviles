@@ -117,6 +117,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:padding="16dp"
-            android:text="Volver al Menú" />
+            android:text="Volver al Menú"
+            android:backgroundTint="#030b70"
+            />
     </LinearLayout>
 </RelativeLayout>
