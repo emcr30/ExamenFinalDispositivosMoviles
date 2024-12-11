@@ -1,25 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="16dp"
-    android:background="#07b6f2">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <!-- Contenedor para el juego -->
+    <FrameLayout
+        android:id="@+id/gameContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/controlPanel"
+        android:background="@color/black" />
+
+    <!-- Panel de control en la parte inferior -->
+    <LinearLayout
+        android:id="@+id/controlPanel"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/en_mantenimiento"
-        android:textSize="24sp"
-        android:textColor="#FF0000"
-        android:padding="16dp"/>
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="#07b6f2"
+        android:padding="8dp">
 
-    <Button
-        android:id="@+id/btnBackToMenu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/volver_al_men"/>
+        <!-- Puntuación -->
+        <TextView
+            android:id="@+id/tvScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Puntos: 0"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
 
-</LinearLayout>
+        <!-- Controles de movimiento -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:columnOrderPreserved="false"
+            android:alignmentMode="alignMargins"
+            android:padding="8dp">
+
+            <!-- Botón Arriba -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+
+            <Button
+                android:id="@+id/btnUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:text="↑"
+                android:backgroundTint="#030b70"
+                android:textColor="@android:color/white"
+                />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+
+            <!-- Botón Izquierda -->
+            <Button
+                android:id="@+id/btnLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:text="←"
+                android:backgroundTint="#030b70"
+                android:textColor="@android:color/white"
+                />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+
+            <!-- Botón Derecha -->
+            <Button
+                android:id="@+id/btnRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:text="→"
+                android:backgroundTint="#030b70"
+                android:textColor="@android:color/white"
+                />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+
+            <!-- Botón Abajo -->
+            <Button
+                android:id="@+id/btnDown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:text="↓"
+                android:backgroundTint="#030b70"
+                android:textColor="@android:color/white"
+                />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+        </GridLayout>
+    </LinearLayout>
+</RelativeLayout>
