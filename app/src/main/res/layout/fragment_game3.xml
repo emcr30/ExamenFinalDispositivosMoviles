@@ -32,16 +32,6 @@
             android:textColor="@android:color/white"
             android:textSize="18sp" />
 
-        <!-- Botón para volver al menú -->
-        <Button
-            android:id="@+id/btnBackToMenu"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="8dp"
-            android:padding="8dp"
-            android:text="Volver al Menú" />
-
         <!-- Controles de movimiento -->
         <GridLayout
             android:layout_width="match_parent"
@@ -119,5 +109,14 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp" />
         </GridLayout>
+
+        <!-- Botón Volver al Menú -->
+        <Button
+            android:id="@+id/btnBackToMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="16dp"
+            android:text="Volver al Menú" />
     </LinearLayout>
 </RelativeLayout>

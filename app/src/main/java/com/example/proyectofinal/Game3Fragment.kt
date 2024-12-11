@@ -44,12 +44,18 @@ class Game3Fragment : Fragment() {
         val btnDown: Button = view.findViewById(R.id.btnDown)
         val btnLeft: Button = view.findViewById(R.id.btnLeft)
         val btnRight: Button = view.findViewById(R.id.btnRight)
+        val btnBackToMenu: Button = view.findViewById(R.id.btnBackToMenu)
 
         btnUp.setOnClickListener { if (direction != Direction.DOWN) direction = Direction.UP }
         btnDown.setOnClickListener { if (direction != Direction.UP) direction = Direction.DOWN }
         btnLeft.setOnClickListener { if (direction != Direction.RIGHT) direction = Direction.LEFT }
         btnRight.setOnClickListener { if (direction != Direction.LEFT) direction = Direction.RIGHT }
 
+        btnBackToMenu.setOnClickListener {
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, MenuFragment())
+                .commit()
+        }
         startGame()
 
         return view
