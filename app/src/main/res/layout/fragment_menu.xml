@@ -7,6 +7,13 @@
     android:padding="16dp"
     android:background="#07b6f2">
 
+    <ImageView
+        android:id="@+id/GameImage1"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_gravity="center"
+        android:src="@drawable/raya3" />
+
     <Button
         android:id="@+id/btnGame1"
         android:layout_width="match_parent"
@@ -14,12 +21,26 @@
         android:text="@string/tic_tac_toe"
         android:backgroundTint="#030b70"/>
 
+    <ImageView
+        android:id="@+id/GameImage2"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_gravity="center"
+        android:src="@drawable/raya4" />
+
     <Button
         android:id="@+id/btnGame2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/_4_en_linea"
         android:backgroundTint="#030b70"/>
+
+    <ImageView
+        android:id="@+id/GameImage3"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_gravity="center"
+        android:src="@drawable/snake" />
 
     <Button
         android:id="@+id/btnGame3"

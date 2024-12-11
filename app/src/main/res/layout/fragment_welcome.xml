@@ -8,6 +8,14 @@
     android:padding="16dp"
     android:background="#07b6f2">
 
+    <!-- Imagen de bienvenida -->
+    <ImageView
+        android:id="@+id/welcomeImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/torturados" />
+
     <!-- Texto de bienvenida -->
     <TextView
         android:id="@+id/welcome_text"
